@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  position: relative;
+  background: linear-gradient(to top left, rgb(97, 10, 97), rgb(177, 24, 24));
+  height: 100vh;
+}
+.game-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  display: flex;
+  width: 60%;
+  height: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgb(59, 56, 56);
+  /* transition: all 0.9sec; */
+}
+.active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.player-name {
+  font-size: 3.7rem;
+  /* padding-bottom: 0; */
+}
+.total-score {
+  font-size: 8rem;
+  color: rgb(177, 24, 24);
+  transform: translateY(-80%);
+}
+.current-score-box {
+  background-color: rgb(177, 24, 24);
+  width: 50%;
+  height: 20%;
+  border-radius: 7px;
+  transform: translateY(-50%);
+  color: rgb(219, 162, 162);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.current {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.current-score {
+  font-size: 3rem;
+}
+.btn {
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 50px;
+  border: none;
+  position: absolute;
+  padding: 8px 20px;
+  box-shadow: 0 0 20px rgb(105, 103, 103);
+  font-weight: bold;
+  color: rgb(34, 33, 33);
+}
+.celebrate {
+  font-size: 3rem;
+}
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 30px rgb(59, 56, 56);
+}
+.newgame {
+  top: 5%;
+}
+.rolldice {
+  bottom: 30%;
+}
+.hold {
+  bottom: 20%;
+}
+.dice-image {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100px;
+  width: 100px;
+  box-shadow: 0 0 20px rgb(105, 103, 103);
+}
+/* .dice-image {
+  height: 100%;
+  width: 100%;
+} */
+.hidden {
+  display: none;
+}
+.winner {
+  background: black;
+  color: rgb(177, 24, 24);
+}
